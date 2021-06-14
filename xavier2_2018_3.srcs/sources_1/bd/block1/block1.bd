@@ -1,0 +1,1032 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xCAD80177AF2D4CEC",
+      "device": "xc7a100tcsg324-2",
+      "name": "block1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ADC_0": "",
+      "Blink_0": "",
+      "FrameCounter_0": "",
+      "VapBuffer_0": "",
+      "Counter_0": "",
+      "Counter_1": "",
+      "Counter_2": "",
+      "Counter_3": "",
+      "FX3_0": "",
+      "clk_wiz_0": "",
+      "xlconcat_0": "",
+      "xlslice_0": "",
+      "xlslice_1": "",
+      "xlslice_2": "",
+      "xlslice_3": ""
+    },
+    "ports": {
+      "FPGA_CLK": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "block1_FPGA_CLK",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "20000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "ADCb": {
+        "direction": "I",
+        "left": "13",
+        "right": "0"
+      },
+      "VAP": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "RUN": {
+        "direction": "I"
+      },
+      "SPAD1b": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "FX3b": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "FX3_CLK": {
+        "direction": "O"
+      },
+      "FRAME": {
+        "direction": "O"
+      },
+      "LED": {
+        "direction": "O"
+      },
+      "NIRS_MUX_SELA": {
+        "direction": "O"
+      },
+      "NIRS_MUX_SELB": {
+        "direction": "O"
+      },
+      "NIRS_ADC_MUX": {
+        "direction": "O"
+      },
+      "nRESET": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "NIRS_ADC_CLKB": {
+        "direction": "O"
+      },
+      "NIRS_ADC_CLKA": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "ADC_0": {
+        "vlnv": "xilinx.com:module_ref:ADC:1.0",
+        "xci_name": "block1_ADC_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ADC",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "ADC_CLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "20000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "run": {
+            "direction": "I"
+          },
+          "ADCb": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "SAMPLE_CLKA": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "5000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "SELA": {
+            "direction": "O"
+          },
+          "SELB": {
+            "direction": "O"
+          },
+          "CLKA": {
+            "direction": "O"
+          },
+          "CLKB": {
+            "direction": "O"
+          },
+          "MUX": {
+            "direction": "O"
+          },
+          "ADC_DATA": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "Blink_0": {
+        "vlnv": "xilinx.com:module_ref:Blink:1.0",
+        "xci_name": "block1_Blink_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Blink",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "20000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "ledOut": {
+            "direction": "O"
+          }
+        }
+      },
+      "FrameCounter_0": {
+        "vlnv": "xilinx.com:module_ref:FrameCounter:1.0",
+        "xci_name": "block1_FrameCounter_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FrameCounter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "clkIn": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "5000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "run": {
+            "direction": "I"
+          },
+          "pulse": {
+            "direction": "O"
+          }
+        }
+      },
+      "VapBuffer_0": {
+        "vlnv": "xilinx.com:module_ref:VapBuffer:1.0",
+        "xci_name": "block1_VapBuffer_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "VapBuffer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "5000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "VAPin": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "VAPout": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "Counter_0": {
+        "vlnv": "xilinx.com:module_ref:Counter:1.0",
+        "xci_name": "block1_Counter_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "5000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "run": {
+            "direction": "I"
+          },
+          "pulse": {
+            "direction": "I"
+          },
+          "data": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "Counter_1": {
+        "vlnv": "xilinx.com:module_ref:Counter:1.0",
+        "xci_name": "block1_Counter_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "5000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "run": {
+            "direction": "I"
+          },
+          "pulse": {
+            "direction": "I"
+          },
+          "data": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "Counter_2": {
+        "vlnv": "xilinx.com:module_ref:Counter:1.0",
+        "xci_name": "block1_Counter_2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "5000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "run": {
+            "direction": "I"
+          },
+          "pulse": {
+            "direction": "I"
+          },
+          "data": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "Counter_3": {
+        "vlnv": "xilinx.com:module_ref:Counter:1.0",
+        "xci_name": "block1_Counter_3_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "5000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "run": {
+            "direction": "I"
+          },
+          "pulse": {
+            "direction": "I"
+          },
+          "data": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "FX3_0": {
+        "vlnv": "xilinx.com:module_ref:FX3:1.0",
+        "xci_name": "block1_FX3_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "FX3",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "reset": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "run": {
+            "direction": "I"
+          },
+          "sysclk": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              },
+              "FREQ_HZ": {
+                "value": "5000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "SPAD": {
+            "direction": "I",
+            "left": "11",
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "12",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "VAP": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "ADC": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "FX3b": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "pclk": {
+            "direction": "O"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "block1_clk_wiz_0_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "500.0"
+          },
+          "CLKOUT1_DRIVES": {
+            "value": "BUFGCE"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "621.795"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "346.848"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "20.000"
+          },
+          "CLKOUT2_DRIVES": {
+            "value": "BUFGCE"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "820.791"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "346.848"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "5.000"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "CLKOUT3_DRIVES": {
+            "value": "BUFGCE"
+          },
+          "CLKOUT3_JITTER": {
+            "value": "820.791"
+          },
+          "CLKOUT3_PHASE_ERROR": {
+            "value": "346.848"
+          },
+          "CLKOUT3_REQUESTED_OUT_FREQ": {
+            "value": "5.000"
+          },
+          "CLKOUT3_REQUESTED_PHASE": {
+            "value": "90"
+          },
+          "CLKOUT3_USED": {
+            "value": "false"
+          },
+          "CLKOUT4_DRIVES": {
+            "value": "BUFGCE"
+          },
+          "CLKOUT5_DRIVES": {
+            "value": "BUFGCE"
+          },
+          "CLKOUT6_DRIVES": {
+            "value": "BUFGCE"
+          },
+          "CLKOUT7_DRIVES": {
+            "value": "BUFGCE"
+          },
+          "CLK_OUT1_PORT": {
+            "value": "clk_20"
+          },
+          "CLK_OUT2_PORT": {
+            "value": "clk_5"
+          },
+          "CLK_OUT3_PORT": {
+            "value": "clk_5N"
+          },
+          "FEEDBACK_SOURCE": {
+            "value": "FDBK_AUTO"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "32.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "50.000"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "32.000"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "128"
+          },
+          "MMCM_CLKOUT2_DIVIDE": {
+            "value": "1"
+          },
+          "MMCM_CLKOUT2_PHASE": {
+            "value": "90.000"
+          },
+          "MMCM_COMPENSATION": {
+            "value": "ZHOLD"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "PRIMITIVE": {
+            "value": "MMCM"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "20.000"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          },
+          "USE_SAFE_CLOCK_STARTUP": {
+            "value": "true"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "block1_xlconcat_0_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "3"
+          },
+          "IN1_WIDTH": {
+            "value": "3"
+          },
+          "IN2_WIDTH": {
+            "value": "3"
+          },
+          "IN3_WIDTH": {
+            "value": "3"
+          },
+          "NUM_PORTS": {
+            "value": "4"
+          },
+          "dout_width": {
+            "value": "12"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "block1_xlslice_0_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "0"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "block1_xlslice_0_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "1"
+          },
+          "DIN_TO": {
+            "value": "1"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "xlslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "block1_xlslice_0_2",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "2"
+          },
+          "DIN_TO": {
+            "value": "2"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "xlslice_3": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "block1_xlslice_0_3",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "3"
+          },
+          "DIN_TO": {
+            "value": "3"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      }
+    },
+    "nets": {
+      "FPGA_CLK_1": {
+        "ports": [
+          "FPGA_CLK",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "ADCb_1": {
+        "ports": [
+          "ADCb",
+          "ADC_0/ADCb"
+        ]
+      },
+      "VAP_1": {
+        "ports": [
+          "VAP",
+          "VapBuffer_0/VAPin"
+        ]
+      },
+      "RUN_1": {
+        "ports": [
+          "RUN",
+          "FrameCounter_0/run",
+          "Counter_3/run",
+          "Counter_2/run",
+          "Counter_1/run",
+          "Counter_0/run",
+          "FX3_0/run",
+          "ADC_0/run"
+        ]
+      },
+      "Counter_0_data": {
+        "ports": [
+          "Counter_0/data",
+          "xlconcat_0/In0"
+        ]
+      },
+      "Counter_1_data": {
+        "ports": [
+          "Counter_1/data",
+          "xlconcat_0/In1"
+        ]
+      },
+      "Counter_2_data": {
+        "ports": [
+          "Counter_2/data",
+          "xlconcat_0/In2"
+        ]
+      },
+      "Counter_3_data": {
+        "ports": [
+          "Counter_3/data",
+          "xlconcat_0/In3"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "FX3_0/SPAD"
+        ]
+      },
+      "VapBuffer_0_VAPout": {
+        "ports": [
+          "VapBuffer_0/VAPout",
+          "FX3_0/VAP"
+        ]
+      },
+      "ADC_0_ADC_DATA": {
+        "ports": [
+          "ADC_0/ADC_DATA",
+          "FX3_0/ADC"
+        ]
+      },
+      "SPAD1b_1": {
+        "ports": [
+          "SPAD1b",
+          "xlslice_0/Din",
+          "xlslice_1/Din",
+          "xlslice_2/Din",
+          "xlslice_3/Din"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "Counter_0/pulse"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "Counter_1/pulse"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "xlslice_2/Dout",
+          "Counter_2/pulse"
+        ]
+      },
+      "xlslice_3_Dout": {
+        "ports": [
+          "xlslice_3/Dout",
+          "Counter_3/pulse"
+        ]
+      },
+      "FX3_0_FX3b": {
+        "ports": [
+          "FX3_0/FX3b",
+          "FX3b"
+        ]
+      },
+      "FX3_0_pclk": {
+        "ports": [
+          "FX3_0/pclk",
+          "FX3_CLK"
+        ]
+      },
+      "FrameCounter_0_pulse": {
+        "ports": [
+          "FrameCounter_0/pulse",
+          "FRAME"
+        ]
+      },
+      "Blink_0_ledOut": {
+        "ports": [
+          "Blink_0/ledOut",
+          "LED"
+        ]
+      },
+      "ADC_0_SELA": {
+        "ports": [
+          "ADC_0/SELA",
+          "NIRS_MUX_SELA"
+        ]
+      },
+      "ADC_0_SELB": {
+        "ports": [
+          "ADC_0/SELB",
+          "NIRS_MUX_SELB"
+        ]
+      },
+      "ADC_0_MUX": {
+        "ports": [
+          "ADC_0/MUX",
+          "NIRS_ADC_MUX"
+        ]
+      },
+      "clk_wiz_0_clk_5": {
+        "ports": [
+          "clk_wiz_0/clk_5",
+          "ADC_0/SAMPLE_CLKA",
+          "FrameCounter_0/clkIn",
+          "Counter_3/clk",
+          "Counter_0/clk",
+          "Counter_1/clk",
+          "Counter_2/clk",
+          "VapBuffer_0/clk",
+          "FX3_0/sysclk"
+        ]
+      },
+      "clk_wiz_0_clk_20": {
+        "ports": [
+          "clk_wiz_0/clk_20",
+          "ADC_0/ADC_CLK",
+          "Blink_0/clk"
+        ]
+      },
+      "nRESET_1": {
+        "ports": [
+          "nRESET",
+          "FrameCounter_0/reset",
+          "Counter_0/reset",
+          "Counter_3/reset",
+          "Counter_2/reset",
+          "Counter_1/reset",
+          "VapBuffer_0/reset",
+          "ADC_0/reset",
+          "FX3_0/reset"
+        ]
+      },
+      "ADC_0_CLKB": {
+        "ports": [
+          "ADC_0/CLKB",
+          "NIRS_ADC_CLKB"
+        ]
+      },
+      "ADC_0_CLKA": {
+        "ports": [
+          "ADC_0/CLKA",
+          "NIRS_ADC_CLKA"
+        ]
+      }
+    }
+  }
+}

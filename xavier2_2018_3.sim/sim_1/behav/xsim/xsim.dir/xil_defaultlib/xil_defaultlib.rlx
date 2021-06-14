@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/imports/sources_1/imports/new/Counter.v,1623358499,verilog,,,,Counter,,,../../../../xavier2_2018_3.srcs/sources_1/bd/block1/ipshared/85a3,,,,,
+C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/imports/sources_1/new/Gray2Bin.v,1623358499,verilog,,C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/imports/sources_1/new/GrayCounter.v,,Gray2Bin,,,../../../../xavier2_2018_3.srcs/sources_1/bd/block1/ipshared/85a3,,,,,
+C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/imports/sources_1/new/GrayCounter.v,1623358499,verilog,,C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/imports/sources_1/imports/new/Counter.v,,GrayCounter,,,../../../../xavier2_2018_3.srcs/sources_1/bd/block1/ipshared/85a3,,,,,

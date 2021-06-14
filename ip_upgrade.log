@@ -1,0 +1,142 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun 12 16:39:49 2021
+| Host         : DESKTOP-4VPH9J9 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'block1_xlslice_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of block1_xlslice_0_3 (xilinx.com:ip:xlslice:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun 12 16:39:49 2021
+| Host         : DESKTOP-4VPH9J9 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'block1_xlslice_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of block1_xlslice_0_2 (xilinx.com:ip:xlslice:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun 12 16:39:49 2021
+| Host         : DESKTOP-4VPH9J9 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'block1_xlslice_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of block1_xlslice_0_1 (xilinx.com:ip:xlslice:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun 12 16:39:48 2021
+| Host         : DESKTOP-4VPH9J9 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'block1_xlslice_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of block1_xlslice_0_0 (xilinx.com:ip:xlslice:1.0 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun 12 16:39:48 2021
+| Host         : DESKTOP-4VPH9J9 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'block1_xlconcat_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of block1_xlconcat_0_0 (xilinx.com:ip:xlconcat:2.1 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun 12 16:39:48 2021
+| Host         : DESKTOP-4VPH9J9 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'block1_proc_sys_reset_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of block1_proc_sys_reset_0_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun 12 16:39:48 2021
+| Host         : DESKTOP-4VPH9J9 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'block1_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of block1_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 2)) to Vivado generation flows.
+

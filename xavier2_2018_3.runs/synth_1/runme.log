@@ -1,0 +1,471 @@
+
+*** Running vivado
+    with args -log block1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source block1_wrapper.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source block1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'A:/Xilinx/Vivado/2018.3/data/ip'.
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 328.781 ; gain = 40.262
+Command: synth_design -top block1_wrapper -part xc7a100tcsg324-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23968 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 445.707 ; gain = 104.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'block1_wrapper' [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/hdl/block1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'block1' [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/synth/block1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'block1_ADC_0_0' [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_ADC_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block1_ADC_0_0' (1#1) [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_ADC_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block1_Blink_0_0' [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_Blink_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block1_Blink_0_0' (2#1) [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_Blink_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block1_Counter_0_0' [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_Counter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block1_Counter_0_0' (3#1) [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_Counter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block1_Counter_1_0' [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_Counter_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block1_Counter_1_0' (4#1) [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_Counter_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block1_Counter_2_0' [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_Counter_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block1_Counter_2_0' (5#1) [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_Counter_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block1_Counter_3_0' [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_Counter_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block1_Counter_3_0' (6#1) [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_Counter_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block1_FX3_0_0' [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_FX3_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block1_FX3_0_0' (7#1) [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_FX3_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block1_FrameCounter_0_0' [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_FrameCounter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block1_FrameCounter_0_0' (8#1) [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_FrameCounter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block1_VapBuffer_0_0' [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_VapBuffer_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block1_VapBuffer_0_0' (9#1) [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_VapBuffer_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block1_clk_wiz_0_0' [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'block1_clk_wiz_0_0' (10#1) [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/.Xil/Vivado-3132-DESKTOP-4VPH9J9/realtime/block1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'block1_xlconcat_0_0' [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_xlconcat_0_0/synth/block1_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 3 - type: integer 
+	Parameter IN1_WIDTH bound to: 3 - type: integer 
+	Parameter IN2_WIDTH bound to: 3 - type: integer 
+	Parameter IN3_WIDTH bound to: 3 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 12 - type: integer 
+	Parameter NUM_PORTS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (11#1) [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'block1_xlconcat_0_0' (12#1) [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_xlconcat_0_0/synth/block1_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'block1_xlslice_0_0' [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_xlslice_0_0/synth/block1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice' [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 4 - type: integer 
+	Parameter DIN_FROM bound to: 0 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice' (13#1) [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'block1_xlslice_0_0' (14#1) [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_xlslice_0_0/synth/block1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'block1_xlslice_0_1' [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_xlslice_0_1/synth/block1_xlslice_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized0' [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 4 - type: integer 
+	Parameter DIN_FROM bound to: 1 - type: integer 
+	Parameter DIN_TO bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized0' (14#1) [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'block1_xlslice_0_1' (15#1) [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_xlslice_0_1/synth/block1_xlslice_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'block1_xlslice_0_2' [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_xlslice_0_2/synth/block1_xlslice_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized1' [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 4 - type: integer 
+	Parameter DIN_FROM bound to: 2 - type: integer 
+	Parameter DIN_TO bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized1' (15#1) [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'block1_xlslice_0_2' (16#1) [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_xlslice_0_2/synth/block1_xlslice_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'block1_xlslice_0_3' [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_xlslice_0_3/synth/block1_xlslice_0_3.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_1_xlslice__parameterized2' [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 4 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_1_xlslice__parameterized2' (16#1) [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ipshared/f3db/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'block1_xlslice_0_3' (17#1) [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_xlslice_0_3/synth/block1_xlslice_0_3.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'block1' (18#1) [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/synth/block1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'block1_wrapper' (19#1) [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/hdl/block1_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized2 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized2 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized2 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized1 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized1 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized1 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized0 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized0 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice__parameterized0 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_1_xlslice has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In31[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 502.820 ; gain = 162.109
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 502.820 ; gain = 162.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 502.820 ; gain = 162.109
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_ADC_0_0/block1_ADC_0_0/block1_ADC_0_0_in_context.xdc] for cell 'block1_i/ADC_0'
+Finished Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_ADC_0_0/block1_ADC_0_0/block1_ADC_0_0_in_context.xdc] for cell 'block1_i/ADC_0'
+Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_Blink_0_0/block1_Blink_0_0/block1_Blink_0_0_in_context.xdc] for cell 'block1_i/Blink_0'
+Finished Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_Blink_0_0/block1_Blink_0_0/block1_Blink_0_0_in_context.xdc] for cell 'block1_i/Blink_0'
+Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_FX3_0_0/block1_FX3_0_0/block1_FX3_0_0_in_context.xdc] for cell 'block1_i/FX3_0'
+Finished Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_FX3_0_0/block1_FX3_0_0/block1_FX3_0_0_in_context.xdc] for cell 'block1_i/FX3_0'
+Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_FrameCounter_0_0/block1_FrameCounter_0_0/block1_FrameCounter_0_0_in_context.xdc] for cell 'block1_i/FrameCounter_0'
+Finished Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_FrameCounter_0_0/block1_FrameCounter_0_0/block1_FrameCounter_0_0_in_context.xdc] for cell 'block1_i/FrameCounter_0'
+Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_VapBuffer_0_0/block1_VapBuffer_0_0/block1_VapBuffer_0_0_in_context.xdc] for cell 'block1_i/VapBuffer_0'
+Finished Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_VapBuffer_0_0/block1_VapBuffer_0_0/block1_VapBuffer_0_0_in_context.xdc] for cell 'block1_i/VapBuffer_0'
+Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_clk_wiz_0_0/block1_clk_wiz_0_0/block1_clk_wiz_0_0_in_context.xdc] for cell 'block1_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_clk_wiz_0_0/block1_clk_wiz_0_0/block1_clk_wiz_0_0_in_context.xdc] for cell 'block1_i/clk_wiz_0'
+Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_Counter_0_0/block1_Counter_0_0/block1_Counter_0_0_in_context.xdc] for cell 'block1_i/Counter_0'
+Finished Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_Counter_0_0/block1_Counter_0_0/block1_Counter_0_0_in_context.xdc] for cell 'block1_i/Counter_0'
+Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_Counter_1_0/block1_Counter_1_0/block1_Counter_1_0_in_context.xdc] for cell 'block1_i/Counter_1'
+Finished Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_Counter_1_0/block1_Counter_1_0/block1_Counter_1_0_in_context.xdc] for cell 'block1_i/Counter_1'
+Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_Counter_2_0/block1_Counter_2_0/block1_Counter_2_0_in_context.xdc] for cell 'block1_i/Counter_2'
+Finished Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_Counter_2_0/block1_Counter_2_0/block1_Counter_2_0_in_context.xdc] for cell 'block1_i/Counter_2'
+Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_Counter_3_0/block1_Counter_3_0/block1_Counter_3_0_in_context.xdc] for cell 'block1_i/Counter_3'
+Finished Parsing XDC File [c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_Counter_3_0/block1_Counter_3_0/block1_Counter_3_0_in_context.xdc] for cell 'block1_i/Counter_3'
+Parsing XDC File [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/constrs_1/new/TE0725.xdc]
+Finished Parsing XDC File [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/constrs_1/new/TE0725.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/constrs_1/new/TE0725.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/block1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/block1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 798.797 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 798.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 798.797 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 798.797 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 798.797 ; gain = 458.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 798.797 ; gain = 458.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for FPGA_CLK. (constraint file  c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_clk_wiz_0_0/block1_clk_wiz_0_0/block1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FPGA_CLK. (constraint file  c:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.srcs/sources_1/bd/block1/ip/block1_clk_wiz_0_0/block1_clk_wiz_0_0/block1_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for block1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/ADC_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/Blink_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/FX3_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/FrameCounter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/VapBuffer_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/Counter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/Counter_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/Counter_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/Counter_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/xlslice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/xlslice_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/xlslice_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for block1_i/xlslice_3. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 798.797 ; gain = 458.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 798.797 ; gain = 458.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design block1_xlslice_0_3 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design block1_xlslice_0_3 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design block1_xlslice_0_3 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design block1_xlslice_0_2 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design block1_xlslice_0_2 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design block1_xlslice_0_2 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design block1_xlslice_0_1 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design block1_xlslice_0_1 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design block1_xlslice_0_1 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design block1_xlslice_0_0 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design block1_xlslice_0_0 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design block1_xlslice_0_0 has unconnected port Din[1]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 798.797 ; gain = 458.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'block1_i/clk_wiz_0/clk_20' to pin 'block1_i/clk_wiz_0/bbstub_clk_20/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'block1_i/clk_wiz_0/clk_5' to pin 'block1_i/clk_wiz_0/bbstub_clk_5/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 829.055 ; gain = 488.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 829.129 ; gain = 488.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 838.801 ; gain = 498.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 838.801 ; gain = 498.090
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 838.801 ; gain = 498.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 838.801 ; gain = 498.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 838.801 ; gain = 498.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 838.801 ; gain = 498.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 838.801 ; gain = 498.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------+----------+
+|      |BlackBox name           |Instances |
++------+------------------------+----------+
+|1     |block1_ADC_0_0          |         1|
+|2     |block1_Blink_0_0        |         1|
+|3     |block1_Counter_0_0      |         1|
+|4     |block1_Counter_1_0      |         1|
+|5     |block1_Counter_2_0      |         1|
+|6     |block1_Counter_3_0      |         1|
+|7     |block1_FX3_0_0          |         1|
+|8     |block1_FrameCounter_0_0 |         1|
+|9     |block1_VapBuffer_0_0    |         1|
+|10    |block1_clk_wiz_0_0      |         1|
++------+------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |block1_ADC_0_0          |     1|
+|2     |block1_Blink_0_0        |     1|
+|3     |block1_Counter_0_0      |     1|
+|4     |block1_Counter_1_0      |     1|
+|5     |block1_Counter_2_0      |     1|
+|6     |block1_Counter_3_0      |     1|
+|7     |block1_FX3_0_0          |     1|
+|8     |block1_FrameCounter_0_0 |     1|
+|9     |block1_VapBuffer_0_0    |     1|
+|10    |block1_clk_wiz_0_0      |     1|
+|11    |IBUF                    |    24|
+|12    |OBUF                    |    40|
++------+------------------------+------+
+
+Report Instance Areas: 
++------+---------------+--------------------+------+
+|      |Instance       |Module              |Cells |
++------+---------------+--------------------+------+
+|1     |top            |                    |   138|
+|2     |  block1_i     |block1              |    74|
+|3     |    xlconcat_0 |block1_xlconcat_0_0 |     0|
+|4     |    xlslice_0  |block1_xlslice_0_0  |     0|
+|5     |    xlslice_1  |block1_xlslice_0_1  |     0|
+|6     |    xlslice_2  |block1_xlslice_0_2  |     0|
+|7     |    xlslice_3  |block1_xlslice_0_3  |     0|
++------+---------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 838.801 ; gain = 498.090
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 838.801 ; gain = 202.113
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 838.801 ; gain = 498.090
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 851.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 851.613 ; gain = 522.832
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 851.613 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Bradley/Documents/xavier/xavier2_2018_3/xavier2_2018_3.runs/synth_1/block1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file block1_wrapper_utilization_synth.rpt -pb block1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 14 16:28:29 2021...
